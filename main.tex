@@ -1,6 +1,40 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+%--------------------
+% Packages
+% -------------------
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} % Use Times Font
 
+
+\usepackage[pdftex]{graphicx} % Required for including pictures
+
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+\usepackage{calc} % To reset the counter in the document after title page
+\usepackage{enumitem} % Includes lists
+
+\frenchspacing % No double spacing between sentences
+\linespread{1.2} % Set linespace
+\usepackage[a4paper, lmargin=0.1666\paperwidth, rmargin=0.1666\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} %margins
+
+\usepackage[all]{nowidow} % Tries to remove widows
+\usepackage[protrusion=true,expansion=true]{microtype} % Improves typography, load after fontpackage is selected
+
+\usepackage[
+    citestyle = authoryear, %in-text citation style
+    style = apa] % bibliography style
+    {biblatex}
+
+\addbibresource{V-SCI Team Culverts.bib}
+
+%-----------------------
+% Set citation style and link .bib file
+%-----------------------
+
+
+%-----------------------
+% Set pdf information
+%-----------------------
 \title{V-SCI Team Culverts}
 \author{dcl3nd }
 \date{March 2021}
@@ -9,6 +43,11 @@
 
 \maketitle
 
-\section{Introduction}
+\section*{Introduction}
+
+\cite{politi2021laup} why isn't this working
+In (\cite{monroe2021le}), describe 
+
+\printbibliography
 
 \end{document}
